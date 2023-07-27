@@ -1,0 +1,29 @@
+# Combinations, Permutations e Product - Itertools
+# Combinação - Ordem não importa - iterável + tamanho do grupo
+# Permutação - Ordem importa
+# Produto - Ordem importa e repete valores únicos
+from itertools import combinations, permutations, product
+
+
+def print_iter(iterator):
+    print(*list(iterator), sep='\n')
+    print()
+
+
+pessoas = [
+    'João', 'Joana', 'Luiz', 'Letícia',
+]
+
+l1 =[
+    "j","e","f","f","e","r","s","o","n",
+]
+camisetas = [
+    ['preta', 'branca'],
+    ['p', 'm', 'g'],
+    ['masculino', 'feminino', 'unisex'],
+    ['algodão', 'poliéster']
+]
+
+print_iter(combinations(l1, 9))
+print_iter(permutations(l1, 9))
+# print_iter(product(*camisetas))

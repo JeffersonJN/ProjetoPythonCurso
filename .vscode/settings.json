@@ -1,0 +1,63 @@
+{
+  "workbench.startupEditor" : "none" ,
+  "explorer.compactFolders" : false,
+  "workbench.iconTheme" : "material-icon-theme" ,
+  "editor.fontSize" : 18 ,
+  "editor.rulers": [80, 120],
+  "workbench.colorTheme" : "OM Theme (Default Dracula Italic)",
+  "code-runner.executorMap" : {
+      "python" : "cls ; python -u " ,
+  },
+  "code-runner.runInTerminal" : true ,
+  "code-runner.ignoreSelection": true,
+  "editor.fontFamily": "'Fira Code', Consolas, 'Dank Mono', 'Source Code Pro', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
+  "terminal.integrated.fontFamily": "monospace",
+  "[python]": {
+      "editor.defaultFormatter": "ms-python.autopep8",
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true,
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.fixAll.unusedImports": true,
+      "source.organizeImports": true,
+      "diffEditor.ignoreTrimWhitespace": false,
+      "editor.formatOnType": true,
+      "editor.wordBasedSuggestions": false
+      }
+  },
+  "python.formatting.provider": "none",
+  "python.languageServer": "Pylance",
+  "python.formatting.autopep8Args": [
+    "--indent-size=4",
+    "--max-line-length=80",
+    "--ignore=E111"
+  ],
+  "python.linting.flake8Args": [
+    // "--ignore=E111"
+  ],
+ 
+  
+  "python.linting.flake8Enabled": false,
+  "python.linting.mypyEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.analysis.diagnosticSeverityOverrides": {
+      "reportUnknownMemberType": "none",
+      "reportUnknownArgumentType": "none",
+      "reportUnknownVariableType": "none",
+      "reportUnknownLambdaType": "none",
+      "reportUnknownParameterType": "none"
+  },
+  "python.defaultInterpreterPath": ".\\venv\\Scripts\\activate",
+  "python.analysis.typeCheckingMode": "off",
+  "cSpell.enabled": true,
+  "cSpellTech.expand": false,
+  "files.associations": {
+      "*.json": "json"
+  },
+  "files.autoSave": "onFocusChange",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "terminal.integrated.confirmOnKill": "editor"
+}
